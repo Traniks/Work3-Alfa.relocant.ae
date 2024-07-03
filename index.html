@@ -9,24 +9,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Сайт релокации в OAЭ">
 
-<link rel="preload" href="assets/fonts/DAMN-Regular.eda3bde4.woff2" as="font" type="font/woff2" crossorigin>
-<link href="assets/css/main.css" rel="preload" as="style" >
-<link href="assets/css/main.css" rel="stylesheet" media="screen" >
-<link href="assets/img/logo.83f660de.svg" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/bg-1.7b21f799.webp" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/hero-2.42a48393.webp" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/tg.dcbe27a9.svg" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/ws.931a9d41.svg" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/hero-4.a2a35109.webp" rel="preload" fetchpriority="high" as="image">
-<link href="assets/img/hero-3.3c196a3e.webp" rel="preload" fetchpriority="high" as="image">
-<link href="assets/js/index.bcc8061a.js" rel="preload" as="script" >
+    <link rel="preload" href="assets/fonts/DAMN-Regular.eda3bde4.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link href="assets/css/preloader.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="preload" as="style" >
+    <link href="assets/css/main.css" rel="stylesheet" media="screen" >
+
+    <link href="assets/img/logo.83f660de.svg" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/bg-1.7b21f799.webp" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/hero-2.42a48393.webp" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/tg.dcbe27a9.svg" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/ws.931a9d41.svg" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/hero-4.a2a35109.webp" rel="preload" fetchpriority="high" as="image">
+    <link href="assets/img/hero-3.3c196a3e.webp" rel="preload" fetchpriority="high" as="image">
+
+    <link href="assets/js/index.bcc8061a.js" rel="preload" as="script" >
 
     <!-- optimization - всегда должен подключаться последним (он удаляется при полной загрузке сайта и перебивает стили)-->
 	<link href="assets/css/optimization.b068747a.css" rel="preload" as="style" >
     <link rel="stylesheet" href="assets/css/optimization.b068747a.css">
+
+    <style>
+        @media only screen and (min-width: 1240px) and (max-width: 1480px) {
+            body {
+                zoom: 0.85;
+            }
+        }
+    </style>
     
 </head> 
 <body id="mainbody" style="opacity:0">
+
+    <!-- Preloader  -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__loader">
+            <p class="preloader__text">РЕЗИДЕНТСКАЯ ВИЗА<br>ВСЕГО ЗА 7 ДНЕЙ<br>4990AED</p>
+            <div class="loadingio-spinner-rolling-nq4q5u6dq7r">
+
+                <div class="ldio-x2uulkbinbj">
+                    <div></div>
+
+                    <span class="preloader__percents">
+                        <span id="percents">0</span>%
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 
     <header class="header">
         <div class="container">
@@ -761,11 +791,11 @@
                         <h3 class="modal-call__mail-title">Или напишите в удобный вам мессенджер</h3>
                         
                         <div class="modal-call__socials">
-                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank" data-profeat="https://widget.yourgood.app/#telegram">
                                 <img loading="lazy" id="modal-call__tg" class="modal-call__socials-icon" src="assets/img/tg.dcbe27a9.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
                             </a>
 
-                            <a href="https://wa.me/971507190519" target="_blank">
+                            <a href="https://wa.me/971507190519" target="_blank" data-profeat="https://widget.yourgood.app/#whatsapp">
                                 <img loading="lazy" id="modal-call__ws" class="modal-call__socials-icon" src="assets/img/ws.931a9d41.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
                             </a>
                         </div>
@@ -827,11 +857,11 @@
                     <form class="modal-messengers__mail" action="mail.php" method="post">
                         
                         <div class="modal-messengers__socials">
-                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank" data-profeat="https://widget.yourgood.app/#telegram">
                                 <img loading="lazy" id="modal-messengers__tg" class="modal-messengers__socials-icon" src="assets/img/tg.dcbe27a9.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
                             </a>
 
-                            <a href="https://wa.me/971507190519" target="_blank">
+                            <a href="https://wa.me/971507190519" target="_blank" data-profeat="https://widget.yourgood.app/#whatsapp">
                                 <img loading="lazy" id="modal-messengers__ws" class="modal-messengers__socials-icon" src="assets/img/ws.931a9d41.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
                             </a>
                         </div>
@@ -860,7 +890,7 @@
                     <form class="modal-tg__mail" action="mail.php" method="post">
                         
                         <div class="modal-tg__socials">
-                            <a href="https://t.me/relocant_oae_bot" target="_blank">
+                            <a href="https://t.me/relocant_oae_bot" target="_blank" data-profeat="https://widget.yourgood.app/#telegram">
                                 <img loading="lazy" id="modal-tg__tg" class="modal-tg__socials-icon" src="assets/img/tg.dcbe27a9.svg" alt="telegram" onclick="ym(96940764, 'reachGoal', 'second_telegram'); return true;">
                             </a>
                         </div>
@@ -888,7 +918,7 @@
                     <form class="modal-ws__mail" action="mail.php" method="post">
                         
                         <div class="modal-ws__socials">
-                            <a href="https://wa.me/971507190519" target="_blank">
+                            <a href="https://wa.me/971507190519" target="_blank" data-profeat="https://widget.yourgood.app/#whatsapp">
                                 <img loading="lazy" id="modal-ws__ws" class="modal-ws__socials-icon" src="assets/img/ws.931a9d41.svg" alt="whatsapp" onclick="ym(96940764, 'reachGoal', 'second_whatsapp'); return true;">
                             </a>
                         </div>
@@ -961,6 +991,7 @@
         </div>
     </section>
 
+    <script defer src="assets/js/preloader.js"></script>
     <script defer src="assets/js/index.bcc8061a.js"></script>
 
     <!-- Фикс прокрутки сайта при открытии модального окна -->
