@@ -1,0 +1,3 @@
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+DirectoryIndex index.php index.html index.html.var index.htm hts_default.html

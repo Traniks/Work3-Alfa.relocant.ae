@@ -1,0 +1,9 @@
+examples/
+logs/
+lock/
+cookies/
+tokens/
+.idea/
+vendor/
+*.log
+*.bak

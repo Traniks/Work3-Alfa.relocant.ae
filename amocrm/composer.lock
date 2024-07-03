@@ -1,0 +1,77 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ed1fd17a7286f2ba3f90698064ed670e",
+    "packages": [
+        {
+            "name": "andrey-tech/amocrm-api-php",
+            "version": "2.18.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrey-tech/amocrm-api-php.git",
+                "reference": "dad0a9f492fd97a9df8bddc5e6a1ef8a0de97069"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrey-tech/amocrm-api-php/zipball/dad0a9f492fd97a9df8bddc5e6a1ef8a0de97069",
+                "reference": "dad0a9f492fd97a9df8bddc5e6a1ef8a0de97069",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AmoCRM\\": "src/AmoCRM"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "andrey-tech",
+                    "homepage": "https://github.com/andrey-tech/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Простая обертка для работы с API amoCRM v2 с авторизацией по протоколу oAuth 2.0 или по API-ключу пользователя, поддержкой AJAX-запросов к frontend-методам, троттлингом запросов, блокировкой одновременного обновления одной сущности и логированием запросов/ответов к API в файл",
+            "homepage": "https://github.com/andrey-tech/amocrm-api-php",
+            "keywords": [
+                "ajax",
+                "amoCRM",
+                "api",
+                "api-wrapper",
+                "crm",
+                "logging",
+                "oauth2",
+                "throttling"
+            ],
+            "support": {
+                "issues": "https://github.com/andrey-tech/amocrm-api-php/issues",
+                "source": "https://github.com/andrey-tech/amocrm-api-php/tree/2.18.4"
+            },
+            "time": "2024-01-15T17:38:51+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
