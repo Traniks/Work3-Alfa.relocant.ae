@@ -22,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (imagesLoadedCount >= imagesTotalCount) {
 			setTimeout(function () {
 				preloader.style.display = 'none'
-				content.style.display = 'block'
-			}, 500) // Add a small delay if needed
+			}, 500) 
 		}
 	}
 })

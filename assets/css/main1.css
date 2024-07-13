@@ -1561,7 +1561,8 @@ button.swiper-pagination-bullet {
 	width: 100%;
 	border-radius: 30px;
 	background: var(--bg-box);
-	max-width: 300px
+	max-width: 300px;
+	cursor: pointer;
 }
 
 .services__item:last-child {
@@ -1694,7 +1695,7 @@ button.swiper-pagination-bullet {
 	}
 
 	.services__item {
-		height: 100%;
+		height: 400px;
 		max-width: unset
 	}
 
@@ -2435,6 +2436,15 @@ button.swiper-pagination-bullet {
 	max-width: 300px;
 	text-align: center;
 	text-transform: uppercase
+}
+
+.modal-services__content-title {
+	/* width: 500px; */
+	font-size: clamp(1.563rem, 1.28rem + 1.41vw, 2.375rem);
+	max-width: 500px;
+	span {
+		text-wrap: balance;
+	}
 }
 
 .modal-messengers__mail {
