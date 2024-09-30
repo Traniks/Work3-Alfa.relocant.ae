@@ -722,7 +722,7 @@ button.swiper-pagination-bullet {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
-	column-gap: 40px;
+	/* column-gap: 40px; */
 	row-gap: 15px
 }
 
